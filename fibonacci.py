@@ -29,8 +29,8 @@ def fibonacciSwap(n):
 
 # Closed form expression for calculating the n'th fibonacci number
 def fibonacciClosedForm(n):
-    golden_mean = (1 + (5 ** 0.5)) / 2
-    return int(((golden_mean ** n) - ((1 - golden_mean) ** n)) / (5 ** 0.5))
+    golden_ratio = (1 + (5 ** 0.5)) / 2
+    return int(((golden_ratio ** n) - ((1 - golden_ratio) ** n)) / (5 ** 0.5))
 
 def test():
     n = 35
