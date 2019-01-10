@@ -2,6 +2,7 @@
 # January 9 2019
 
 import cProfile
+# import mpmath
 
 # Basic recursive implementation
 def fibonacciRecursive(n):
@@ -29,6 +30,10 @@ def fibonacciSwap(n):
 
 # Closed form expression for calculating the n'th fibonacci number
 def fibonacciClosedForm(n):
+    
+    # golden_ratio = mpmath.fdiv(mpmath.fadd(1, mpmath.sqrt(5)), 2)
+    # return round(mpmath.fdiv((mpmath.fsub(mpmath.power(golden_ratio, n), mpmath.power(mpmath.fsub(1, golden_ratio), n))), mpmath.sqrt(5)))
+
     golden_ratio = (1 + (5 ** 0.5)) / 2
     return int(((golden_ratio ** n) - ((1 - golden_ratio) ** n)) / (5 ** 0.5))
 
