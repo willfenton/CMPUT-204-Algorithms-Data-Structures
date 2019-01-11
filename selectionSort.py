@@ -1,10 +1,13 @@
 # Insertion Sort algorithm implemented in Python 3
 # January 11 2019
 
-# Worst case runtime: O(n^2)
-# Average case runtime: O(n^2)
-# Best case runtime: O(n^2)
+# Selection sort works by scanning the array for the smallest element, then swapping it into the first position.
+# Then repeat, finding second largest, swapping into second position. Repeat until array is sorted.
+# Loop invariant: after n iterations of the outer for loop, the array[1..n] is sorted in non-decreasing order.
 
+# Worst case runtime: O(n^2) (O(N) swaps)
+# Average case runtime: O(n^2) (O(N) swaps)
+# Best case runtime: O(n^2) (O(N) swaps)
 
 # Space complexity: Sorts in-place, so constant O(1) additional memory usage
 
