@@ -4,4 +4,6 @@ My implementations of the various algorithms / data structures covered in CMPUT 
 
 ## Algorithms
 1. Insertion Sort
-2. Various algorithms for calculating the N'th term of the Fibonacci Sequence
+2. Selection Sort
+3. Merge Sort
+4. Various algorithms for calculating the N'th term of the Fibonacci Sequence
