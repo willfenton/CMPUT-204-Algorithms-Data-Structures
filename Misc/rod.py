@@ -37,8 +37,19 @@ def memoized_cut_rod_aux(p, n, r):
 	r[n]=q
 	return q
 
+def bottom_up_cut_rod(p, n):
+	r=[None]*(n+1)
+	r[0]=0
+	for j in range(1, n+1):
+		q=-32767
+		for i in range(1, j+1):
+			q=max(q, p[i]+r[j-i])
+		r[j]=q
+	return r[n]
+
 for j in range(31):
-	print(memoized_cut_rod(p, j))
+	print(memoized_cut_rod(p, j)==bottom_up_cut_rod(p, j))
+
 
 
 
